@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .brand-logo {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.hero h1 {
+  padding: 0;
+  margin: 0;
+}
+
+nav .brand-logo {
+  position: relative;
+}
+
+.valign-wrapper {
+  flex-wrap: wrap;
+}
+
+.header-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero img,
+.about img,
+.featured-images img,
+.carousel img {
+  object-fit: cover;
+}
+
+.hero img {
+  height: 400px;
+  width: 200px;
+}
+
+.hero img:nth-child(odd) {
+  margin-top: 5rem;
+}
+
+.carousel {
+  z-index: 1;
+  height: 40rem;
+  margin-top: -15rem;
+}
+
+.waves {
+  height: 15rem;
+  margin-top: -10rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 81%);
+  z-index: -1;
+}
+
+.row > .col {
+  margin-bottom: 1.5rem;
+}
+
+.additional-info li {
+  margin-bottom: 0.75rem;
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-block p {
+  font-weight: bold;
+}
+
+.featured-images img {
+  width: 100%;
+}
+
+.form .input-field input[type="text"]:focus + label,
+.form .input-field input[type="email"]:focus + label,
+.form .input-field input[type="tel"]:focus + label,
+.form .input-field textarea:focus + label {
+  color: #3f51b5;
+}
+
+.form .input-field input[type="text"]:focus,
+.form .input-field input[type="email"]:focus,
+.form .input-field input[type="tel"]:focus,
+.form .input-field textarea:focus {
+  border-bottom: 1px solid #3f51b5;
+  box-shadow: 0 1px 0 0 #000;
+}

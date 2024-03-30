@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locate a Socket</title>
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Materialize Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="nav-wrapper transparent z-depth-0">
+        <a href="#" class="left brand-logo indigo-text">Locate A Socket</a>
+        <ul class="right hide-on-small-only">
+          <li>
+            <a href="#" class="black-text">Home</a>
+          </li>
+          <li>
+            <a href="#" class="black-text">About</a>
+          </li>
+          <li>
+            <a href="#" class="black-text">Charging Rates</a>
+          </li>
+          <li>
+            <a href="#" class="black-text">Contact</a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="right hide-on-med-and-up sidenav-trigger black-text"
+          data-target="mobile-nav"
+          role="button"
+        >
+          <i class="material-icons"> menu </i>
+        </a>
+        <ul id="mobile-nav" class="sidenav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Charging Rates</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /Navbar -->
+    </header>
+    <!-- /Header -->
+    <!-- Main -->
+    <main>
+      <!-- Section - Hero -->
+      <section class="section hero">
+        <!-- Row Container -->
+        <div class="row valign-wrapper">
+          <!-- First Column -->
+          <div class="col s12 l3">
+            <h1>Find Charging Stations Easily</h1>
+            <p>
+              Locate a Socket helps you find nearby charging stations for your electric vehicle.
+            </p>
+            <a href="#" class="waves-effect waves-light btn-large indigo"
+              >Book a spot</a
+            >
+          </div>
+          <!-- /First Column -->
+          <!-- Second Column -->
+          <div class="col s12 l9 header-images">
+            <img src="images/BurwoodOne.png" alt="" class="hide-on-small-only" />
+            <img src="images/CBD.jpg" alt="" class="hide-on-small-only" />
+            <img src="images/Deakin.jpg" alt="" class="hide-on-small-only" />
+            <img
+              src="images/flinders.webp"
+              alt=""
+              class="hide-on-med-and-down"
+            />
+          </div>
+          <!-- /Second Column -->
+          <div class="col s12 hide-on-med-and-up">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="images/BurwoodOne.png" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/Deakin.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/CBD.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/flinders.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Row Container -->
+        <!-- Nice Waves -->
+        <div id="waves" class="waves"></div>
+        <!-- /Nice Waves -->
+      </section>
+      <!-- /Section - Hero -->
+      <!-- Section - About -->
+      <div class="section about">
+        <!-- Row Container -->
+        <div class="row valign-wrapper">
+          <!-- First Column -->
+          <div class="col s12 l6">
+            <h2>Charging Made Convienient</h2>
+            <p>
+              Your trusted companion for electric vehicle charging.
+            </p>
+            <a href="#" class="waves-effect waves-light btn-large indigo"
+              >Book a spot</a
+            >
+          </div>
+          <!-- /First Column -->
+          <!-- Second Column -->
+          <div class="col s12 l6">
+            <!-- Nested Row Container -->
+            <div class="row">
+              <!-- First Nested Column -->
+              <div class="col m6">
+                <!-- Card -->
+                <div class="card center-align indigo lighten-4">
+                  <!-- Card Content -->
+                  <div class="card-content white-text">
+                    <i class="material-icons large"> power </i>
+                    <span class="card-title">Convenience</span>
+                    <p>
+                      Find charging stations wherever you go, whether it's a road trip or your daily commute.
+                    </p>
+                  </div>
+                  <!-- /Card Content -->
+                </div>
+                <!-- /Card -->
+              </div>
+              <!-- /First Nested Column -->
+              <!-- Second Nested Column -->
+              <div class="col m6">
+                <!-- Card -->
+                <div class="card center-align indigo lighten-4">
+                  <!-- Card Content -->
+                  <div class="card-content white-text">
+                    <i class="material-icons large"> watch </i>
+                    <span class="card-title">Real-Time Updates</span>
+                    <p>
+                      Get real-time updates on charging station availability and charging rates.
+                    </p>
+                  </div>
+                  <!-- /Card Content -->
+                </div>
+                <!-- /Card -->
+              </div>
+              <!-- /Second Nested Column -->
+              <!-- Third Nested Column -->
+              <div class="col m6">
+                <!-- Card -->
+                <div class="card center-align indigo lighten-4">
+                  <!-- Card Content -->
+                  <div class="card-content white-text">
+                    <i class="material-icons large"> location_on </i>
+                    <span class="card-title">Easy Navigation</span>
+                    <p>
+                      Locate to the selected charging station seamlessly with our built-in navigation feature.
+                    </p>
+                  </div>
+                  <!-- /Card Content -->
+                </div>
+                <!-- /Card -->
+              </div>
+              <!-- /Third Nested Column -->
+              <!-- Fourth Nested Column -->
+              <div class="col m6">
+                <!-- Card -->
+                <div class="card center-align indigo lighten-4">
+                  <!-- Card Content -->
+                  <div class="card-content white-text">
+                    <i class="material-icons large"> lock </i>
+                    <span class="card-title">Secure Payment</span>
+                    <p>
+                      Pay for your charging session securely through the app, eliminating the need for cash or cards.
+                    </p>
+                  </div>
+                  <!-- /Card Content -->
+                </div>
+                <!-- /Card -->
+              </div>
+              <!-- /Fourth Nested Column -->
+            </div>
+            <!-- /Nested Row Container -->
+          </div>
+          <!-- /Second Column -->
+        </div>
+        <!-- /Row Container -->
+      </div>
+      <!-- /Section - About -->
+      <!-- Section - Nearby Loc -->
+      <section class="section">
+        <!-- Section Header -->
+        <div class="center-align">
+          <h2>Nearby Locations</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+            earum nobis officia eveniet enim repudiandae. Dignissimos at tenetur
+            aperiam autem?
+          </p>
+        </div>
+        <!-- /Section Header -->
+        <!-- Row Container -->
+        <div class="row">
+          <!-- First Column -->
+          <div class="col s12 m6 l3">
+            <!-- Card -->
+            <div class="card medium hoverable">
+              <!-- Card Image -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="images/BurwoodOne.png" alt="" class="activator" />
+              </div>
+              <!-- /Card Image -->
+              <!-- Card Content -->
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Burwood One <i class="material-icons right"> expand_more </i></span
+                >
+                <p class="grey-text">Burwood East</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="card-action">
+                  <a
+                    href="#"
+                    class="waves-effect waves-light btn-small indigo lighten-1"
+                    >Book a spot</a
+                  >
+                </div>
+              </div>
+              <!-- /Card Content -->
+              <!-- Card Reveal -->
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Burwood One <i class="material-icons right"> close </i></span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  amet fuga magnam, molestias deserunt beatae.
+                </p>
+                <ul class="additional-info">
+                  <div class="price-block">
+                    <p>A$8/hr</p>
+                    <a
+                      href="#"
+                      class="right waves-effect waves-light btn-small indigo lighten-1"
+                      >Book a spot</a
+                    >
+                  </div>
+                </ul>
+              </div>
+              <!-- /Card Reveal -->
+            </div>
+            <!-- /Card -->
+          </div>
+          <!-- /First Column -->
+          <!-- Second Column -->
+          <div class="col s12 m6 l3">
+            <!-- Card -->
+            <div class="card medium hoverable">
+              <!-- Card Image -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="images/Deakin.jpg" alt="" class="activator" />
+              </div>
+              <!-- /Card Image -->
+              <!-- Card Content -->
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Deakin University <i class="material-icons right"> expand_more </i></span
+                >
+                <p class="grey-text">Burwood</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="card-action">
+                  <a
+                    href="#"
+                    class="waves-effect waves-light btn-small indigo lighten-1"
+                    >Book a spot</a
+                  >
+                </div>
+              </div>
+              <!-- /Card Content -->
+              <!-- Card Reveal -->
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Deakin University <i class="material-icons right"> close </i></span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  amet fuga magnam, molestias deserunt beatae.
+                </p>
+                <ul class="additional-info">
+                  <div class="price-block">
+                    <p>A$10/hr</p>
+                    <a
+                      href="#"
+                      class="right waves-effect waves-light btn-small indigo lighten-1"
+                      >Book a spot</a
+                    >
+                  </div>
+                </ul>
+              </div>
+              <!-- /Card Reveal -->
+            </div>
+            <!-- /Card -->
+          </div>
+          <!-- /Second Column -->
+          <!-- Third Column -->
+          <div class="col s12 m6 l3">
+            <!-- Card -->
+            <div class="card medium hoverable">
+              <!-- Card Image -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="images/flinders.webp" alt="" class="activator" />
+              </div>
+              <!-- /Card Image -->
+              <!-- Card Content -->
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  Flinders Street <i class="material-icons right"> expand_more </i></span
+                >
+                <p class="grey-text">Melbourne</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="card-action">
+                  <a
+                    href="#"
+                    class="waves-effect waves-light btn-small indigo lighten-1"
+                    >Book a spot</a
+                  >
+                </div>
+              </div>
+              <!-- /Card Content -->
+              <!-- Card Reveal -->
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >Flinders Street <i class="material-icons right"> close </i></span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  amet fuga magnam, molestias deserunt beatae.
+                </p>
+                <ul class="additional-info">
+                  <div class="price-block">
+                    <p>A$12/hr</p>
+                    <a
+                      href="#"
+                      class="right waves-effect waves-light btn-small indigo lighten-1"
+                      >Book a spot</a
+                    >
+                  </div>
+                </ul>
+              </div>
+              <!-- /Card Reveal -->
+            </div>
+            <!-- /Card -->
+          </div>
+          <!-- /Third Column -->
+          <!-- Fourth Column -->
+          <div class="col s12 m6 l3">
+            <!-- Card -->
+            <div class="card medium hoverable">
+              <!-- Card Image -->
+              <div class="card-image waves-effect waves-block waves-light">
+                <img src="images/flinders.webp" alt="" class="activator" />
+              </div>
+              <!-- /Card Image -->
+              <!-- Card Content -->
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                  CBD <i class="material-icons right"> expand_more </i></span
+                >
+                <p class="grey-text">Melbourne</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <div class="card-action">
+                  <a
+                    href="#"
+                    class="waves-effect waves-light btn-small indigo lighten-1"
+                    >Book a spot</a
+                  >
+                </div>
+              </div>
+              <!-- /Card Content -->
+              <!-- Card Reveal -->
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"
+                  >CBD <i class="material-icons right"> close </i></span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  amet fuga magnam, molestias deserunt beatae.
+                </p>
+                <ul class="additional-info">
+                  <div class="price-block">
+                    <p>A$12/hr</p>
+                    <a
+                      href="#"
+                      class="right waves-effect waves-light btn-small indigo lighten-1"
+                      >Book a spot</a
+                    >
+                  </div>
+                </ul>
+              </div>
+              <!-- /Card Reveal -->
+            </div>
+            <!-- /Card -->
+          </div>
+          <!-- /Fourth Column -->
+        </div>
+        <!-- /Row Container -->
+      </section>
+      <!-- /Section - Hero banner -->
+      <!-- Section - Featured Images -->
+      <section class="section featured-images">
+        <!-- Section Header -->
+        <div class="center-align">
+          <h2>Gallery</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, ex
+            consectetur quia dolore explicabo id officiis placeat possimus
+            provident iusto.
+          </p>
+        </div>
+        <!-- /Section Header -->
+        <!-- Row Container -->
+        <div class="row">
+          <!-- First Row -->
+          <div class="col s12 m6 l8">
+            <img
+              src="images/BurwoodOne.png"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <div class="col s12 m6 l4">
+            <img
+              src="images/CBD.jpg"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <!-- /First Row -->
+          <!-- Second Row -->
+          <div class="col s12 m12 l6">
+            <img
+              src="images/Deakin.jpg"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <div class="col m6 l3">
+            <img
+              src="images/flinders.webp"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <div class="col m6 l3">
+            <img
+              src="images/station1.avif"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <!-- /Second Row -->
+          <!-- Third Row -->
+          <div class="col s12 m12 l3">
+            <img
+              src="images/station2.webp"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <div class="col s12 m6 l3">
+            <img
+              src="images/station3.webp"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <div class="col s12 m6 l6">
+            <img
+              src="images/CBD.jpg"
+              alt=""
+              class="materialboxed"
+              height="400"
+            />
+          </div>
+          <!-- /Third Row -->
+        </div>
+        <!-- /Row Container -->
+      </section>
+      <!-- /Section - Featured Images -->
+      <!-- Section - Contact Us & FAQs -->
+      <section class="section">
+        <!-- Section Header -->
+        <div class="center-align">
+          <h2>Get in Touch With Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, ex et quas natus sapiente molestiae delectus iste
+            eveniet cupiditate eligendi!
+          </p>
+        </div>
+        <!-- /Section Header -->
+        <!-- Row Container -->
+        <div class="row">
+          <!-- First Column -->
+          <div class="col s12 m6">
+            <h5>Send a Messgae</h5>
+            <p class="grey-text text-darken-1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+              commodi sed corrupti fuga adipisci molestias.
+            </p>
+            <form action="" class="form row">
+              <div class="input-field col s12">
+                <input type="text" id="name" class="validate" />
+                <label for="name">Full Name</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input type="email" id="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input type="tel" id="tel" class="validate" />
+                <label for="tel">Phone Number</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="textarea" class="materialize-textarea"></textarea>
+                <label for="textarea">Message</label>
+              </div>
+              <button
+                class="waves-effect waves-light btn-large indigo"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <!-- /First Column -->
+          <!-- Second Column -->
+          <div class="col s12 m6">
+            <h5>Frequently Asked Questions</h5>
+            <p class="grey-text text-darken-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit incidunt cupiditate nihil recusandae velit dolorum.
+            </p>
+            <ul class="collapsible expandable z-depth-0">
+              <li class="active">
+                <div class="collapsible-header">
+                  <i class="material-icons indigo-text"> looks_one </i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <div class="collapsible-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae nostrum corporis, consequatur labore animi incidunt
+                  nobis voluptate eligendi culpa accusantium?
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons indigo-text"> looks_two </i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+                <div class="collapsible-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae nostrum corporis, consequatur labore animi incidunt
+                  nobis voluptate eligendi culpa accusantium?
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons indigo-text"> looks_3 </i>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tenetur!
+                </div>
+                <div class="collapsible-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae nostrum corporis, consequatur labore animi incidunt
+                  nobis voluptate eligendi culpa accusantium?
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- /Second Column -->
+        </div>
+        <!-- /Row Container -->
+      </section>
+      <!-- /Section - Contact Us & FAQs -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="center-align">
+      <p class="indigo-text text-darken-4">&copy; All Rights Reserved 2024 | Designed and Developed by Danish Kumar | Deakin University</p>
+    </footer>
+    <!-- /Footer -->
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Nice Waves JS -->
+    <script src="https://unpkg.com/nice-waves@latest"></script>
+    <!-- Main JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
