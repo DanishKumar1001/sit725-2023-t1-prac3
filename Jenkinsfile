@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/DanishKumar1001/SharePlate-Nourish-Give.git'
+                git 'https://github.com/DanishKumar1001/sit725-2023-t1-prac3'
             }
         }
         
